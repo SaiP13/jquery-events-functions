@@ -126,7 +126,7 @@ EVENTS:
         2) $("#input_id").keypress(function(){ });
         3) $(".input_class").keypress(function(){ }); 
         <!-- End Key Press -->
-
+<br><hr>
     #MULTIPLE EVENTS AT A TIME:
     
         <!-- on -->
