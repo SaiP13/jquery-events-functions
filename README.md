@@ -142,5 +142,8 @@ EVENTS:
                         click: function(){ $(this).css("background-color", "yellow"); }
                     });
         <!-- end on -->
-    <br><hr>
+        
+        
+   <br><hr>
+    
     <!--  !! Keep Updated !! HappY Coding  !!  -->
