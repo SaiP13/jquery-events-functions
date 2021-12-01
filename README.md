@@ -126,7 +126,7 @@ EVENTS:
         2) $("#input_id").keypress(function(){ });
         3) $(".input_class").keypress(function(){ }); 
         <!-- End Key Press -->
-<br><hr>
+        
     #MULTIPLE EVENTS AT A TIME:
     
         <!-- on -->
@@ -142,5 +142,5 @@ EVENTS:
                         click: function(){ $(this).css("background-color", "yellow"); }
                     });
         <!-- end on -->
-
+    <br><hr>
     <!--  !! Keep Updated !! HappY Coding  !!  -->
