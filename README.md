@@ -1,8 +1,15 @@
 # jquery-events-functions
 All jQuery Functions and Events
 <hr>
+<h2>Index</h2>
+    <a href="#SELECTORS">SELECTORS</a><br>
+    <a href="#VALUES">GETTING VALUES</a><br>
+    <a href="#EVENTS">EVENTS</a><br>
+    <a href="#VALIDATIONS">VALIDATIONS</a><br>
+    <a href="#VALIDATIONS">VALIDATIONS</a><br>
 
-SELECTORS:
+<br><hr>
+<span id='SELECTORS'>SELECTORS</span>:
 
     1) #using class name   :     $('.class_name')
     2) #using ID name      :     $('#id_name')
@@ -10,7 +17,7 @@ SELECTORS:
     4) #using ele & class  :     $("p.class_name")
     5) #all elements       :     $("a[href]") || $("a[target='_blank']") || $(":button")
 
-GETTING VALUES:
+<span id='VALUES'>GETTING VALUES:</span>
 
     1) var x = $("#id_name").val();
     2) var x = $(".class_name").val();
@@ -23,7 +30,7 @@ GETTING VALUES:
     9) $('#id').each(function(){ var x = $(this).val(); });
     10) $('.class').each(function(){ var x = $(this).val(); });
 
-EVENTS:
+<span id='EVENTS'>EVENTS:</span>
 
     #MOUSE EVENTS:
         
