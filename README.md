@@ -1,7 +1,7 @@
 # jquery-events-functions
 All jQuery Functions and Events
 <hr>
-
+<h2>Index</h2>
     <a href="#SELECTORS">SELECTORS</a><br>
     <a href="#VALUES">GETTING VALUES</a><br>
     <a href="#EVENTS">EVENTS</a><br>
@@ -150,15 +150,18 @@ All jQuery Functions and Events
                     });
         <!-- end on -->
         
-    <span id='VALIDATIONS'>VALIDATIONS:</span> 
+	
+<span id='VALIDATIONS'>VALIDATIONS:</span> 
     
     #Empty Check:
+    
         var xid = $("#id").val();
         if((xid == 0) || (xid == '') || (xid == undefined) || (xid == null)){
             alert('empty');
         }
 
     #ALLOW ONLY NUMBERS:
+    
         $(document).on("keyup",".allowNumOnly",function(){
             var val = $(this).val();
             if(isNaN(val)){
@@ -168,6 +171,7 @@ All jQuery Functions and Events
         });
 
     #Mail Validation:
+    
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;   
         if(emailReg.test(mail) ){
             alert("Valid");
@@ -176,6 +180,7 @@ All jQuery Functions and Events
         }
 
     #Mobile Validation:
+    
         var mobile = $("#mobile").val();
         var filter = /^\d*(?:\.\d{1,2})?$/; || var NumberRegex = /^[0-9]*$/;
         if (mobile.test(filter) && mobile.length == 10) {
@@ -185,6 +190,7 @@ All jQuery Functions and Events
         }
 
     #Validate Dynamic Fileds(Multiple):
+    
         var primary_numbers = [];
 		$("input[name='primary_mobile[]']").each(function() {
 			var value = $(this).val();
@@ -207,6 +213,7 @@ All jQuery Functions and Events
 		}
 
     #Checkbox Validation:
+    
             if(($('.is_primeMobile:radio:checked').length == 0)){
                     alert("Please select atleast one primary number");
             }
