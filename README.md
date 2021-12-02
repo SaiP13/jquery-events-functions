@@ -1,7 +1,7 @@
 # jquery-events-functions
 All jQuery Functions and Events
 <hr>
-<h2>Index</h2>
+
     <a href="#SELECTORS">SELECTORS</a><br>
     <a href="#VALUES">GETTING VALUES</a><br>
     <a href="#EVENTS">EVENTS</a><br>
@@ -149,6 +149,67 @@ All jQuery Functions and Events
                         click: function(){ $(this).css("background-color", "yellow"); }
                     });
         <!-- end on -->
+        
+    <span id='VALIDATIONS'>VALIDATIONS:</span> 
+    
+    #Empty Check:
+        var xid = $("#id").val();
+        if((xid == 0) || (xid == '') || (xid == undefined) || (xid == null)){
+            alert('empty');
+        }
+
+    #ALLOW ONLY NUMBERS:
+        $(document).on("keyup",".allowNumOnly",function(){
+            var val = $(this).val();
+            if(isNaN(val)){
+                val = val.replace(/[^0-9\.]/g,'');  
+            }
+            $(this).val(val); 
+        });
+
+    #Mail Validation:
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;   
+        if(emailReg.test(mail) ){
+            alert("Valid");
+        } else {
+            alert("Invalid");
+        }
+
+    #Mobile Validation:
+        var mobile = $("#mobile").val();
+        var filter = /^\d*(?:\.\d{1,2})?$/; || var NumberRegex = /^[0-9]*$/;
+        if (mobile.test(filter) && mobile.length == 10) {
+            alert("Valid");
+        } else {
+            alert("Invalid");
+        }
+
+    #Validate Dynamic Fileds(Multiple):
+        var primary_numbers = [];
+		$("input[name='primary_mobile[]']").each(function() {
+			var value = $(this).val();
+			primary_numbers.push(value);
+			if(value == ""){
+				alert("Mobile number should not be empty");
+			} else if(value != '') {
+				if(value.length < 10){
+					alert("Mobile number should be 10 digit");
+				}
+			}
+		});
+		if(primary_numbers != ""){
+			duplicateNumber = primary_numbers.some((element, index) => {
+				return primary_numbers.indexOf(element) !== index
+			});
+			if(duplicateNumber){
+				alert("Duplicate numbers should not be allowed!");
+			}
+		}
+
+    #Checkbox Validation:
+            if(($('.is_primeMobile:radio:checked').length == 0)){
+                    alert("Please select atleast one primary number");
+            }
         
         
    <br><hr>
