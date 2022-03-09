@@ -1,5 +1,6 @@
 # jquery-events-functions
 All jQuery Functions and Events
+<a href="https://saip13.github.io/jquery-events-functions/" target="_blank"> https://saip13.github.io/jquery-events-functions/ <a>
 <hr>
 <h2>Index</h2>
     <a href="#SELECTORS">SELECTORS</a><br>
